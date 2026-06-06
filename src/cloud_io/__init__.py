@@ -18,7 +18,7 @@ from database_connect import mongo_operation as mongo
 import os, sys
 from src.constants import *
 from src.exception import CustomException
-
+import streamlit as st
 
 
 class MongoIO:
@@ -26,7 +26,7 @@ class MongoIO:
 
     def __init__(self):
         if MongoIO.mongo_ins is None:
-            mongo_db_url = "mongodb+srv://anshuman05:KvgK3qHVsHIGoXvo@cluster0.pkcbxgj.mongodb.net/?appName=Cluster0"
+            mongo_db_url = st.secrets["mongodb+srv://anshuman05:KvgK3qHVsHIGoXvo@cluster0.pkcbxgj.mongodb.net/?appName=Cluster0"]
             if mongo_db_url is None:
                 raise Exception(f"Environment key: {MONGODB_URL_KEY} is not set.")
             MongoIO.mongo_ins = mongo(client_url=mongo_db_url,
