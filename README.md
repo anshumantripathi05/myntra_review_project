@@ -16,14 +16,13 @@ and product-related insights in a structured manner.
 ## Application Preview
 
 ### Product Search Interface
-![Product Search Interface](image-1.png)
+![Product Search Interface](<screenshots/search_interface .png>)
 
 ### Scraped Review Results
-![Scraped Review Data](image-4.png)
+![Scraped Review Results](screenshots/Product_analytics_report.png)
 
 ### Product Analytics Dashboard
-![Product Analytics Dashboard](image-2.png)
-
+![Product Analytics Dashboard](screenshots/generate_analysis.png)
 
 
 ---
